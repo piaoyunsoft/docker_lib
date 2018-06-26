@@ -19,5 +19,6 @@ RUN chmod +x /usr/bin/start
 
 RUN groupadd -r pwn && useradd -r -g pwn pwn
 USER pwn
+CMD /usr/bin/start
 EXPOSE 10001-10005
 
